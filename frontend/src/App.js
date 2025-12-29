@@ -6,7 +6,7 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
+    fetch("https://beyondchats-fullstack-assignment-m48j.onrender.com/api/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data))
       .catch((err) => console.error("Failed to fetch blogs", err));
