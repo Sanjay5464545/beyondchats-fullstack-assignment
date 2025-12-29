@@ -38,6 +38,8 @@ https://beyondchats.com/blogs/
 - Fetched blogs using backend APIs
 - Used Groq LLaMA 3.3 to rewrite and enrich original blog content
 - Stored AI-generated content back into the databa
+- Google search and competitor article scraping implemented using Serper.dev
+- References cited at bottom of AI-generated article
 
 
 # Phase 3 – Frontend
@@ -117,4 +119,4 @@ GenAI script runs separately and updates blog content in the database.
 - UI is kept simple Phase 3 is marked as easy in the assignment.
 
 # Live Link
-https://vercel.com/sanjays-projects-7a11b0da/beyondchats-fullstack-assignment
+https://beyondchats-fullstack-assi-git-790bad-sanjays-projects-7a11b0da.vercel.app/
