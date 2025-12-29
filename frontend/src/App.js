@@ -1,4 +1,4 @@
-// Main App component for displaying blog articles
+// Main App component for displaying original and AI-updated blogs
 
 import { useEffect, useState } from "react";
 
@@ -20,13 +20,22 @@ function App() {
         <div
           key={blog._id}
           style={{
-            border: "1px solid #ddd",
-            padding: "15px",
-            marginBottom: "20px",
+            border: "1px solid #ccc",
+            padding: "20px",
+            marginBottom: "30px",
           }}
         >
           <h2>{blog.title || "Untitled Blog"}</h2>
-          <p>{blog.originalContent?.slice(0, 300)}...</p>
+
+          <h3>Original Article</h3>
+          <p>{blog.originalContent?.slice(0, 400)}...</p>
+
+          <h3>AI Updated Article</h3>
+          <p>
+            {blog.updatedContent
+              ? blog.updatedContent.slice(0, 400) + "..."
+              : "AI version not generated yet."}
+          </p>
         </div>
       ))}
     </div>
