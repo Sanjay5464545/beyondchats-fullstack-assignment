@@ -28,14 +28,19 @@ function App() {
           <h2>{blog.title || "Untitled Blog"}</h2>
 
           <h3>Original Article</h3>
-          <p>{blog.originalContent?.slice(0, 400)}...</p>
+<div style={{ background: "#f9f9f9", padding: "10px" }}>
+  <p>{blog.originalContent?.slice(0, 400)}...</p>
+</div>
 
-          <h3>AI Updated Article</h3>
-          <p>
-            {blog.updatedContent
-              ? blog.updatedContent.slice(0, 400) + "..."
-              : "AI version not generated yet."}
-          </p>
+<h3>AI Updated Article</h3>
+<div style={{ background: "#eef6ff", padding: "10px" }}>
+  <p>
+    {blog.updatedContent
+      ? blog.updatedContent.slice(0, 400) + "..."
+      : "AI version not generated yet."}
+  </p>
+</div>
+
         </div>
       ))}
     </div>
