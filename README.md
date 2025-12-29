@@ -51,16 +51,29 @@ https://beyondchats.com/blogs/
 # Project Structure
 
 beyondchats-assignment/
+│
 ├── backend/
- ├── config/
-│ ├── models/
-│ ├── routes/
-     ├── scraper/
-│ ├── ai-script/
-│ └── server.js
+│   ├── ai-script/
+│   │   ├── helpers/
+│   │   │   ├── googleSearch.js
+│   │   │   └── rewriteWithLLM.js
+│   │   ├── phase2GoogleTest.js
+│   │   └── scrapeArticle.js
+│   │
+│   ├── models/
+│   │   └── Blog.js
+│   ├── routes/
+│   │   └── blogRoutes.js
+│   ├── scraper/
+│   │   └── scrapeOldBlogs.js
+│   ├── config/
+│   ├── server.js
+│   └── .env
 │
 ├── frontend/
-│ └── src/
+│   ├── src/
+│   │   └── App.js
+│   └── package.json
 │
 └── README.md
 
