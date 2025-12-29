@@ -131,5 +131,14 @@ GenAI script runs separately and updates blog content in the database.
 - Some blogs title Show "Untitled Blog" if the main website does not expose title tag HTML
 - UI is kept simple Phase 3 is marked as easy in the assignment.
 
-# Live Link
-https://beyondchats-fullstack-assi-git-790bad-sanjays-projects-7a11b0da.vercel.app/
+
+## Frontend (live) :
+https://beyondchats-fullstack-assignment-tan.vercel.app/
+
+
+## Backend API (Live):
+https://beyondchats-fullstack-assignment-m48j.onrender.com
+
+
+The live frontend is connected to the deployed backend APIs and displays real blog data
+stored in MongoDB along with AI-updated articles generated using Groq LLaMA 3.3
