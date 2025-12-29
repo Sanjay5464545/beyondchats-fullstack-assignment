@@ -53,15 +53,18 @@ const run = async () => {
 
   const blogs = await fetchBlogs();
   console.log(`Fetched ${blogs.length} blogs from API`);
-    if (blogs.length > 0) {
-    const rewritten = await rewriteWithAI(
-      blogs[0].originalContent || blogs[0].title
-    );
+    for (const blog of blogs) {
+  if (!blog.originalContent) continue;
 
-    console.log("AI rewritten preview:");
-    console.log(rewritten?.slice(0, 300));
-  }
+  const rewritten = await rewriteWithAI(blog.originalContent);
+  if (!rewritten) continue;
 
+  await axios.put(`http://localhost:5000/api/blogs/${blog._id}`, {
+    updatedContent: rewritten,
+  });
+
+  console.log("AI content saved for:", blog.title);
+}
 };
 
 run();

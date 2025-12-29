@@ -26,4 +26,19 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Update blog with AI-generated content
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedBlog = await Blog.findByIdAndUpdate(
+      req.params.id,
+      { updatedContent: req.body.updatedContent },
+      { new: true }
+    );
+
+    res.json(updatedBlog);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = router;
