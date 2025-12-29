@@ -1,6 +1,9 @@
 // This script is responsible for scraping the 5 oldest blogs
 // from BeyondChats and logging pagination details.
 
+require("dotenv").config({ path: "./backend/.env" });
+
+
 const axios = require("axios");
 const cheerio = require("cheerio");
 const mongoose = require("mongoose");
