@@ -1,10 +1,11 @@
 # BeyondChats – Full Stack Web Developer Intern Assignment
 
+
 This project is built as part of the BeyondChats Full Stack Web Developer Intern assignment.
 It demonstrates web scraping, backend APIs, database integration, GenAI usage, and a simple frontend UI.
 
-This project build my own with little ai uses. The goal of this project is to show clear end-to-end data flow rather than complex UI or over-engineering.
-
+This project is built mostly by me with limited and practical use of AI.
+The main goal is to show clear end-to-end data flow rather than complex UI or over-engineering.
 
 ## Tech used
 
@@ -116,4 +117,4 @@ GenAI script runs separately and updates blog content in the database.
 - UI is kept simple Phase 3 is marked as easy in the assignment.
 
 # Live Link
-(Add deployed frontend link here if available) 
+https://vercel.com/sanjays-projects-7a11b0da/beyondchats-fullstack-assignment
